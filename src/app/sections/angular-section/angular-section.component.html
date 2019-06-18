@@ -144,7 +144,7 @@
                 <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
               </div>
               <!-- Changes select from mama($event) to what it is now-->
-              <input class="form-control datepicker" placeholder="Select date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" (select)="" type="text" [dayTemplate]="t" (dateSelect)="startDateChanged($event)" autocomplete="off" (focus)="focus3=true" (blur)="focus3=false"/>
+              <input class="form-control datepicker" placeholder="Select date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" type="text" [dayTemplate]="t" (dateSelect)="startDateChanged($event)" autocomplete="off" (focus)="focus3=true" (blur)="focus3=false"/>
               <ng-template #t let-date let-focused="focused" >
                <span class="custom-day"
                 [class.text-white]="isActive(date)"
